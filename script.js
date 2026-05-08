@@ -12,10 +12,7 @@ async function searchBooks() {
 
     const text = await response.text();
 
-    const result =
-      document.getElementById("result");
-
-    result.innerHTML = text;
+    document.getElementById("result").innerHTML = text;
 
   } catch(error) {
 
